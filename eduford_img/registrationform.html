@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Registrtion form</title>
+<link href="registrationform css.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<center>
+<div class="cls">
+<form name="form1" method="post" action="successss.html" onsubmit="return validname()">
+<table>
+
+<tr>
+<td> UserName: </td>
+<td> <input type="text" class="mail" pattern="[a-zA-Z ]{4,}" title="Name Must Be In Alaphabeticals Only" name="uname"> </td>
+</tr>
+
+<tr>
+<td>PhoneNumber:</td>
+<td><input type="tel" class="mail" name="number"></td>
+</tr>
+
+<tr>
+<td>Gender:</td>
+<td>Female:<input type="radio" name="rad1" class="mails">Male:<input type="radio" name="rad1" class="mail2s"></td>
+</tr>
+
+<tr>
+<td>Email:</td>
+<td><input type="email" class="mail" name="mail1"></td>
+</tr>
+
+
+<tr>
+<td>UploadResume:</td>
+<td><input id="file" type="file" name="file"></td>
+</tr>
+
+
+
+
+<tr>
+<td class="country"> HighestQualification:</td>
+<td><select class="opt" >
+<option value="Degree">Degree</option>
+<option value="BE/BTECH">BE/BTECH</option>
+<option value="BCOM">BCOM</option>
+<option value="MBA">MBA</option>
+<option value="MCA">MCA</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td class="country">SelectStream:</td>
+<td><select class="opt" >
+<option value="BRANCH">BRANCH</option>
+<option value="CSE">CSE</option>
+<option value="IT">IT</option>
+<option value="EEE">EEE</option>
+<option value="ECE">ECE</option>
+<option value="COMPUTERS">COMPUTERS</option>
+</select></td>
+</tr>
+
+
+<tr>
+<td class="country">YOP:</td>
+<td><select class="opt" >
+<option value="YEAR">YEAR</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2018">2018</option>
+<option value="2017">2017</option>
+
+</select></td>
+</tr>
+
+
+
+
+<tr>
+<td align="center" colspan="2">
+<input type="submit" class="btn">&nbsp;&nbsp;
+<input type="reset" class="btn">
+</td>
+</tr>
+
+
+
+
+
+</table>
+</form>
+</div>
+</center>
+
+
+<script>
+
+//name
+
+function validname(){
+var name=document.form1.uname.value;
+if(name=="null" || name==""){
+alert("enter valid name");
+return false;
+}
+
+//number
+
+var num=document.form1.number.value;
+if(num.length>10)
+{
+alert("Enter valid number");
+return false;
+}
+
+
+
+//email
+
+var email=document.form1.mail1.value;
+var atpos=email.indexOf("@");
+var dotpos=email.lastIndexOf(".");
+if(dotpos-atpos<5)
+{
+alert("enter valid emailid");
+return false;
+}
+
+
+}
+
+</script>
+</body>
+</html>

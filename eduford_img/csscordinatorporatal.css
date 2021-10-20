@@ -1,0 +1,196 @@
+*{
+margin:0;
+padding:0;
+
+}
+html{
+scroll-behavior:smooth;
+}
+
+
+
+ol li a .fa{
+
+padding-right:15px;
+}
+
+ol li a .ma{
+
+padding-right:15px;
+}
+
+ol{
+position:fixed;
+width:20%;
+height:100%;
+background-color:#000;
+margin-left:25px;
+list-style:none;
+display:block;
+color:#fff;
+}
+
+ol li a{
+color:#616161;
+font-size:20px;
+padding:15px 20px;
+text-decoration:none;
+display:block;
+position:relative;
+
+}
+
+ol li a:before{
+content:'';
+position:absolute;
+width:6px;
+height:100%
+background-color:#68AA47;
+left:0;
+top:0;
+transition: .3s;
+opacity:0;
+
+}
+ol li a:hover{
+
+background-color:#000;
+color:#fff;
+
+}
+
+section{
+
+float:right;
+height:150vh;
+width:78vw;
+display:flex;
+
+justify-content:center;
+text-transform:uppercase;
+
+}
+#section1{
+
+background:#66ff66;
+}
+#section2{
+
+
+background:#66ff66;
+
+}
+#section2 input{
+
+padding:10px;
+margin-bottom:30px;
+
+}
+#section2 select{
+padding:10px;
+margin-bottom:30px;
+
+}
+#section2 input,select{
+
+width:100%;
+box-sizing:border-box;
+box-shadow:none;
+outline:none;
+border:none;
+border-bottom:2px solid #999;
+background:#cccccc;
+
+}
+#section2 button{
+
+padding:10px;
+width:100%;
+margin:10px;
+border:none;
+cursor:pointer;
+text-transform:uppercase;
+
+}
+
+
+
+#section3{
+
+background:#66ff66;
+}
+#section4{
+
+background:#66ff66
+
+}
+#section4 input{
+
+padding:10px;
+margin-bottom:30px;
+
+}
+#section4 input{
+
+width:100%;
+box-sizing:border-box;
+box-shadow:none;
+outline:none;
+border:none;
+border-bottom:2px solid #999;
+background:#cccccc;
+
+}
+#section4 button{
+
+padding:10px;
+width:100%;
+margin:10px;
+border:none;
+cursor:pointer;
+text-transform:uppercase;
+
+}
+
+#section5{
+
+background:#cccccc;
+
+}
+#section5 select{
+padding:10px;
+margin-bottom:30px;
+
+}
+#section5 input{
+
+padding:10px;
+margin-bottom:30px;
+
+}
+#section5 input,select{
+
+width:100%;
+box-sizing:border-box;
+box-shadow:none;
+outline:none;
+border:none;
+border-bottom:2px solid #999;
+background:#cccccc;
+
+}
+#section5 button{
+
+padding:10px;
+width:100%;
+margin:10px;
+border:none;
+cursor:pointer;
+text-transform:uppercase;
+
+}
+#section6{
+
+background:#cccccc;
+
+}

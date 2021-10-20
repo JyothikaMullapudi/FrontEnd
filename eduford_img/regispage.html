@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="regispagecss.css" type="text/css" rel="stylesheet">
+<title>sign up form</title>
+</head>
+<body>
+<div class="sign-up-form">
+<img src="uicon.jpg">
+<h1>Sign Up Now</h1>
+<form name="form1" method="post" action="sucess.html">
+<input type="email" placeholder="Your Email" class="input-box" name="mail">
+<input type="password" placeholder="Your password" class="input-box" name="pass1">
+<input type="password" placeholder="conform password" class="input-box" name="pass2">
+<p><span><input type="checkbox"> I agree to terms of services</p>
+<a href="registrationform.html"><button type="button" class="sign-upbtn" onClick="return validName()">Sign up</button></a>
+<hr>
+<p class="or">Or</p>
+<a href="registrationform.html"> <button type="button" class="facebookbtn" onClick="return validName()">Login with Facebook</button></a>
+
+</form>
+</div>
+<script>
+function validName(){
+//email
+
+var email=document.form1.mail.value;
+var atpos=email.indexOf("@");
+var dotpos=email.lastIndexOf(".");
+if(dotpos-atpos<5)
+{
+alert("enter valid emailid");
+return false;
+
+}
+//password:
+
+var password=document.form1.pass1.value;
+var cpassword=document.form1.pass2.value;
+if(password.length<8){
+alert("password must contains min 8 characters");
+return false;
+}
+if(password==cpassword)
+{
+return true;
+}
+else{
+alert("password nd conform password must be same");
+return false;
+}
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Account</title>
+<link rel="stylesheet" href="createaccountcss.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="login-box">
+<h1>Login</h1>
+<form name="form1" method="post" onsubmit="return validname()" action="studentportl.html">
+
+<div class="textbox">
+<i class="fa fa-user"></i>
+<input type="text" placeholder="Username" name="user" value="">
+</div>
+<div class="textbox">
+<i class="fa fa-lock"></i>
+<input type="password" placeholder="Password" name="password" value="">
+</div>
+
+
+<button type="submit" class="btn" value="Sign in">Sign in</button>
+</div>
+
+<script>
+function validname(){
+//email
+
+var email=document.form1.user.value;
+var atpos=email.indexOf("@");
+var dotpos=email.lastIndexOf(".");
+if(dotpos-atpos<5)
+{
+alert("enter valid emailid");
+return false;
+
+}
+//password:
+
+var password=document.form1.password.value;
+
+if(password.length<8){
+alert("password must contains min 8 characters");
+return false;
+}
+}
+</script>
+</body>
+</html>
